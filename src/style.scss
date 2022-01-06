@@ -401,6 +401,104 @@ body {
   }
 }
 
+.explore {
+  background-color: $dark-color;
+  &__inner {
+    display: flex;
+    padding: 75px 0;
+    @media (max-width: 1024px) {
+      padding: 60px 0;
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      padding: 40px 0 38px;
+    }
+  }
+  &__info {
+    max-width: 660px;
+    margin-right: 60px;
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-family: FORUM;
+    letter-spacing: 5px;
+    font-size: 80px;
+    line-height: 90px;
+    color: white;
+    margin-bottom: 76px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      background-color: $red-color;
+      margin-top: 25px;
+      display: block;
+      height: 3px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 75px;
+      margin-bottom: 60px;
+      &::after {
+        margin-top: 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 25px;
+      font-size: 40px;
+      line-height: 60px;
+    }
+    @media (max-width: 420px) {
+      font-size: 28px;
+      line-height: 40px;
+      &::after {
+        margin-top: 18px;
+      }
+    }
+  }
+  &__text {
+    color: white;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--yellow {
+      color: $gold-color;
+    }
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 39px;
+      margin-bottom: 0;
+      &--space {
+        display: none;
+      }
+      &:last-child {
+        display: none;
+      }
+      &:nth-of-type(2) {
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    min-width: 540px;
+    margin-top: 15px;
+    @media (max-width: 1024px) {
+      align-self: center;
+    }
+    @media (max-width: 768px) {
+      min-width: 0;
+      align-self: stretch;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
     &__inner {
@@ -497,7 +595,7 @@ body {
   }
   .tour {
     &__inner {
-      padding: 60px 0;
+      padding: 60px 0 79px;
     }
   }
 }
