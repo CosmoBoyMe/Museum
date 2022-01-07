@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Museum</title>
   </head>
 
@@ -217,7 +221,88 @@
           </div>
         </div>
       </section>
+      <section class="video">
+        <div class="container">
+          <div class="video__inner">
+            <div class="video__info">
+              <h2 class="video__title">Video journey</h2>
+              <p class="video__text">
+                Enter and visit one of the most famous museums in the world and
+                enjoy<br />
+                masterpieces such as Mona Lisa or Hammurabi's Code
+              </p>
+            </div>
+            <div class="video__main-video">
+              <img
+                class="video__main-video-poster"
+                src="../assets/video/poster0.jpg"
+                alt="paris video"
+              />
+              <button class="video__main-video-play"></button>
+              <div class="video__main-video-controls">
+                <button class="video__main-video-control-play"></button>
+                <input
+                  type="range"
+                  value="53"
+                  min="0"
+                  max="100"
+                  step="1"
+                  class="video__main-video-progress"
+                />
+                <button class="video__main-video-volume"></button>
+                <input
+                  type="range"
+                  value="40"
+                  min="0"
+                  max="100"
+                  step="1"
+                  class="video__main-video-volume-progress"
+                />
+                <button class="video__main-video-fullscreen"></button>
+              </div>
+            </div>
+            <div class="video__slider">
+              <ul class="video__slider-list swiper-wrapper">
+                <li class="swiper-slide video__slider-item">
+                  <img
+                    src="../assets/video/poster3.jpg"
+                    alt=""
+                    class="video__slider-preview"
+                  />
+                </li>
+                <li class="swiper-slide video__slider-item">
+                  <img
+                    src="../assets/video/poster1.jpg"
+                    alt=""
+                    class="video__slider-preview"
+                  />
+                </li>
+                <li class="swiper-slide video__slider-item">
+                  <img
+                    src="../assets/video/poster2.jpg"
+                    alt=""
+                    class="video__slider-preview"
+                  />
+                </li>
+                <li class="swiper-slide video__slider-item">
+                  <img
+                    src="../assets/video/poster4.jpg"
+                    alt=""
+                    class="video__slider-preview"
+                  />
+                </li>
+              </ul>
+              <div class="video__slider-controls">
+                <button class="video__slider-arrow-prev"></button>
+                <div class="video__slider-dots"></div>
+                <button class="video__slider-arrow-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script type="module" src="./scripts/index.js"></script>
 </html>
