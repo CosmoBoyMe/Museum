@@ -506,6 +506,9 @@ body {
       padding: 60px 0;
     }
     @media (max-width: 768px) {
+      padding: 40px 0 80px;
+    }
+    @media (max-width: 420px) {
       padding: 40px 0;
     }
   }
@@ -738,8 +741,8 @@ body {
     @media (max-width: 768px) {
       margin-bottom: 20px;
     }
-    @media (max-width: 768px) {
-      margin-bottom: 40px;
+    @media (max-width: 420px) {
+      margin-bottom: 36px;
     }
   }
 
@@ -783,6 +786,89 @@ body {
     border-radius: 50%;
     width: 12px;
     height: 12px;
+  }
+}
+
+.gallery {
+  background-color: black;
+  &__inner {
+    padding: 75px 0 0;
+    height: 2200px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    }
+    @media (max-width: 1440px) {
+      height: 1460px;
+    }
+    @media (max-width: 1024px) {
+      padding-top: 60px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 40px;
+    }
+    @media (max-width: 920px) {
+      height: 1220px;
+    }
+    @media (max-width: 420px) {
+      height: 757px;
+    }
+  }
+
+  &__title {
+    font-family: Forum;
+    text-transform: uppercase;
+    color: white;
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 75px;
+    letter-spacing: 5px;
+    @media (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 75px;
+      margin-bottom: 60px;
+    }
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 60px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+  &__items {
+    height: 150%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 23px 36px;
+    :first-child,
+    :nth-child(11) {
+      margin-top: 25px;
+    }
+
+    @media (max-width: 1024px) {
+      :first-child,
+      :nth-child(11) {
+        margin-top: 50px;
+      }
+    }
+    @media (max-width: 768px) {
+      gap: 24px;
+    }
+  }
+  &__item {
+    width: 31.5%;
+    @media (max-width: 768px) {
+      width: 48.4%;
+    }
   }
 }
 
