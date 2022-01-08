@@ -1601,6 +1601,154 @@ body {
   }
 }
 
+.contact__inner {
+  padding: 75px 0;
+}
+
+@media (max-width: 1024px) {
+  .contact__inner {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__inner {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact__inner {
+    padding: 40px 0;
+  }
+}
+
+.contact__title {
+  font-family: FORUM;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #9d8665;
+  margin-bottom: 75px;
+  letter-spacing: 5px;
+}
+
+.contact__title::after {
+  display: block;
+  content: "";
+  margin-top: 25px;
+  background-color: #710707;
+  height: 3px;
+}
+
+@media (max-width: 1024px) {
+  .contact__title {
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 60px;
+  }
+  .contact__title::after {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__title {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .contact__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact__info {
+  min-width: 290px;
+}
+
+.contact__name {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 1024px) {
+  .contact__name {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__name {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.contact__text {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .contact__text {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contact__text:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__inner {
     position: relative;
