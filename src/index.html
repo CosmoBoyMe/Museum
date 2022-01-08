@@ -385,6 +385,93 @@
           </div>
         </div>
       </section>
+      <section class="tickets">
+        <div class="container">
+          <div class="tickets__inner">
+            <h2 class="tickets__title">BUY TICKETS</h2>
+            <div class="tickets__content">
+              <div class="tickets__img-wrapper">
+                <img
+                src="../assets/tickets.jpg"
+                alt="tickets"
+                class="tickets__img"
+              />
+              </div>
+              <div class="tickets__select">
+                <div class="tickets__types">
+                  <h3 class="tickets__types-title">Ticket Type</h3>
+                  <div class="tickets__types-items">
+                    <label class="tickets__types-label">
+                      <input checked class="visually-hidden tickets__types-radio" type="radio" name="tickets">
+                      <span class="tickets__types-checkmark"></span>
+                      Permanent exhibition
+                    </label>
+                    <label class="tickets__types-label">
+                      <input class="visually-hidden tickets__types-radio" type="radio" name="tickets">
+                      <span class="tickets__types-checkmark"></span>
+                      Temporary exhibition
+                    </label>
+                    <label class="tickets__types-label">
+                      <input class="visually-hidden tickets__types-radio" type="radio" name="tickets">
+                      <span class="tickets__types-checkmark"></span>
+                      Combined Admission
+                    </label>
+                  </div>
+                </div>
+                <div class="tickets__amount">
+                  <h3 class="tickets__amount-title">Amount</h3>
+                  <p class="tickets__amount-text">Basic 18+</p>
+                  <div class="tickets__amount-item">
+                    <button
+                      class="tickets__amount-btn tickets__amount-btn-minus"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    ></button>
+                    <input
+                      class="tickets__amount-number"
+                      type="number"
+                      min="0"
+                      max="20"
+                      value="1"
+                      readonly
+                    />
+                    <button
+                      class="tickets__amount-btn tickets__amount-btn-plus"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    ></button>
+                  </div>
+
+                  <p class="tickets__amount-text">Senior 65+</p>
+                  <div class="tickets__amount-item">
+                    <button
+                      class="tickets__amount-btn tickets__amount-btn-minus"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    ></button>
+                    <input
+                      class="tickets__amount-number"
+                      type="number"
+                      min="0"
+                      max="20"
+                      value="1"
+                      readonly
+                    />
+                    <button
+                      class="tickets__amount-btn tickets__amount-btn-plus"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    ></button>
+              
+              
+                 
+                  </div>
+                  <p class="tickets__amount-total">Total €<span class="tickets__amount-price">220</span></p>
+                  <button class="tickets__amount-buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

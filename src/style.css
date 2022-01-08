@@ -6,6 +6,14 @@
           box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -1121,6 +1129,459 @@ body {
 @media (max-width: 768px) {
   .gallery__item {
     width: 48.4%;
+  }
+}
+
+.tickets__inner {
+  padding: 75px 0;
+}
+
+@media (max-width: 1024px) {
+  .tickets__inner {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__inner {
+    padding: 40px 0;
+  }
+}
+
+.tickets__title {
+  font-family: FORUM;
+  font-size: 80px;
+  line-height: 90px;
+  color: #9d8665;
+  margin-bottom: 75px;
+  letter-spacing: 5px;
+}
+
+.tickets__title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+  margin-top: 25px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__title {
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 61px;
+  }
+  .tickets__title::after {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__title {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.tickets__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 650px) {
+  .tickets__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.tickets__img-wrapper {
+  margin-right: 60px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__img-wrapper {
+    margin-right: 80px;
+    width: 700px;
+    height: 440px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__img-wrapper {
+    width: 100%;
+    margin-right: 59px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tickets__img-wrapper {
+    height: 160px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tickets__img {
+    width: 100%;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.tickets__select {
+  max-width: calc(50% - 60px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1245px) {
+  .tickets__select {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tickets__select {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 29px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__select {
+    margin-right: 49px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tickets__select {
+    margin-right: 0;
+  }
+}
+
+.tickets__types-title {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.tickets__types-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.tickets__types-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 22px;
+          column-gap: 22px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.tickets__types-checkmark {
+  display: inline-block;
+  position: relative;
+  min-width: 17px;
+  height: 17px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.tickets__types-radio:checked + .tickets__types-checkmark::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1245px) {
+  .tickets__types {
+    display: none;
+  }
+}
+
+.tickets__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.tickets__amount-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__amount-title {
+    margin-bottom: 39px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__amount-title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+}
+
+.tickets__amount-text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-left: 25px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-text {
+    padding-left: 0;
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__amount-text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+}
+
+.tickets__amount-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  padding: 0 0px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-item {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__amount-item {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__amount-item {
+    margin-bottom: 20px;
+  }
+}
+
+.tickets__amount-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.tickets__amount-btn-minus {
+  position: relative;
+  width: 40px;
+}
+
+.tickets__amount-btn-minus::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 3px;
+  background-color: black;
+}
+
+.tickets__amount-btn-plus {
+  position: relative;
+  width: 40px;
+}
+
+.tickets__amount-btn-plus::after, .tickets__amount-btn-plus::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.tickets__amount-btn-plus::after {
+  width: 16px;
+  height: 3px;
+}
+
+.tickets__amount-btn-plus::before {
+  width: 3px;
+  height: 16px;
+}
+
+.tickets__amount-number {
+  all: unset;
+  font-family: Roboto;
+  width: 60px;
+  text-align: center;
+  padding-left: 10px;
+  line-height: 26px;
+  color: black;
+  font-size: 22px;
+}
+
+.tickets__amount-total {
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-total {
+    margin-top: -5px;
+    margin-bottom: 69px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets__amount-total {
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__amount-total {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-price {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tickets__amount-price {
+    margin-left: 0;
+  }
+}
+
+.tickets__amount-buy-btn {
+  width: 175px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount-buy-btn {
+    width: 175px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tickets__amount {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .tickets__amount {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
