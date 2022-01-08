@@ -1585,6 +1585,22 @@ body {
   }
 }
 
+.parallax__bg {
+  background-image: url("../assets/parallax.jpg");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .parallax__bg {
+    height: 300px;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__inner {
     position: relative;
